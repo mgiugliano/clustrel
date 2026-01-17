@@ -264,6 +264,199 @@
             letter-spacing: 1px;
         }
 
+        /* About Section */
+        .about {
+            padding: 4rem 0;
+            margin: 2rem 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .highlight-item {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .highlight-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-item p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            margin: 2rem 0;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 15px;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #333;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .contact-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: #764ba2;
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            margin-top: 2rem;
+        }
+
+        .contact-form-section h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            width: 100%;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             nav {
@@ -321,7 +514,7 @@
             <div class="hero-content">
                 <div class="badge">🌟 EIC TRANSITION Project</div>
                 <h1>CLUSTREL</h1>
-                <p>Revolutionizing cluster management and resource allocation through cutting-edge technology and innovative solutions. Funded by the European Innovation Council to drive excellence in computational efficiency and scalability.</p>
+                <p>Seizure clusters are a devastating reality for millions. With CLUSTREL, we are developing a smart therapeutic management platform to provide relief for patients suffering from drug-resistant epilepsy. We are moving from the lab closer to the market to make "Seizure Cluster Relief" a reality.</p>
                 <a href="#about" class="cta-button">Learn More</a>
             </div>
             <div class="hero-image">
@@ -335,20 +528,99 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <h3>💡 Innovation</h3>
-                    <p>Leveraging European Innovation Council funding to develop groundbreaking solutions for cluster management and resource optimization.</p>
+                    <p>First-of-its-kind drug–delivery platform, leveraging graphene oxide nanotechnology and microelectronics to enable the precise, intra-oral release of rescue medication.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>⚡ Performance</h3>
-                    <p>Delivering exceptional computational performance and efficiency through advanced algorithms and intelligent resource allocation strategies.</p>
+                    <h3>⚡ Technology</h3>
+                    <p>The device features a miniature, wireless system encapsulated in a medical-grade biocompatible resin, utilizing an innovative electro-actuation mechanism to deliver precise doses from a replaceable capsule.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🔒 Reliability</h3>
-                    <p>Building robust and scalable systems that ensure continuous operation and seamless integration with existing infrastructure.</p>
+                    <h3>🔒 Validation</h3>
+                    <p>Supported by the EIC Transition funding, we are executing a rigorous roadmap of preclinical testing—from in vitro cellular models to in vivo pharmacokinetics—to ensure full regulatory compliance and safety for future clinical use.</p>
                 </div>
                 <div class="feature-card">
                     <h3>🌍 Impact</h3>
-                    <p>Contributing to European technological advancement and fostering innovation in the field of distributed computing and cluster management.</p>
+                    <p>Our mission is to address the urgent needs of the 50 million epilepsy patients worldwide by providing a reliable, user-friendly solution for the millions of people suffering from drug-resistant cluster seizures.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About CLUSTREL</h2>
+                    <p>CLUSTREL is an innovative EIC-funded project addressing one of the most urgent challenges in neurology: cluster seizures in drug-resistant epilepsy. Our team is developing a groundbreaking therapeutic management platform that combines advanced nanotechnology, microelectronics, and biomedical engineering.</p>
+                    <p>Seizure clusters represent a devastating escalation of epileptic activity affecting millions of patients worldwide. Those diagnosed with drug-resistant epilepsy face particularly severe consequences, including increased risk of status epilepticus, injury, and Sudden Unexpected Nocturnal Death in Epilepsy (SUDEP).</p>
+                    <p>Our mission is to bridge the gap between laboratory innovation and clinical reality, bringing relief to patients who have exhausted conventional treatment options.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <strong>🧬 Technology</strong>
+                            <p>Graphene oxide nanotech with wireless micro-electronics for personalised and precision drug delivery.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>🏥 Clinical Focus</strong>
+                            <p>Targeted treatment for drug-resistant epilepsy and cluster seizure management.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>📊 Scale</strong>
+                            <p>Addressing the needs of 50+ million epilepsy patients worldwide.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>🔬 Validation</strong>
+                            <p>Rigorous preclinical testing ensuring regulatory compliance and safety.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/CLUSTREL.png" alt="CLUSTREL Technology" style="border-radius: 15px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:michele.giugliano@unimore.it">Prof. Eng. Michele GIUGLIANO, PhD</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Website</h3>
+                    <p><a href="https://www.giugliano.info" target="_blank">www.giugliano.info</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>European Innovation Council<br>Horizon Europe Programme</p>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h3>Send us a Message</h3>
+                <form onsubmit="event.preventDefault(); alert('Thank you for your message! We will get back to you soon.'); this.reset();">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
             </div>
         </section>
     </div>
@@ -360,7 +632,7 @@
                 <span class="eic-badge">Funded by</span>
                 <strong>European Innovation Council (EIC)</strong>
             </div>
-            <p>&copy; 2024-2025 CLUSTREL Project. All rights reserved.</p>
+            <p>&copy; Jan 2026 CLUSTREL Project. All rights reserved.</p>
             <p style="font-size: 0.9rem; margin-top: 1rem; color: #888;">EIC TRANSITION - Accelerating Innovation in Europe</p>
         </div>
     </footer>
